@@ -1,5 +1,10 @@
 {
     "compilerOptions": {
-        
-    }
+        "outDir": "dist/js", // quando compilar vai ser criado dentro da pasta dist o uma pasta js para os arquivos q foram compilados do ts para js
+        "target": "ES6", //pega a partir do js 6
+        "noEmitOnError": true //não gera arquivo js enquanto houver erro no código
+    },
+    "include": [
+        "app/**/*" //pega todas as pastas que estão dentro de app
+    ]
 }
