@@ -1,12 +1,16 @@
 export class Negociacao {
-    private _data: Date;
-    private _quantidade: number;
-    private _valor: number;
+    // private _data: Date;
+    // private _quantidade: number;
+    // private _valor: number;
 
-    constructor(data: Date, quantidade: number, valor: number) {
-        this._data = data;
-        this._quantidade = quantidade;
-        this._valor = valor;
+    constructor(//do jeito abaixo fica mais limpo o código, ele continua a fazr a msm coisa do de cima
+        private _data: Date,
+        private _quantidade: number,
+        private _valor: number
+    ) {
+        // this._data = data;
+        // this._quantidade = quantidade;
+        // this._valor = valor;
     }
 
     get data(): Date {
